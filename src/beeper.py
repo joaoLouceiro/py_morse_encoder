@@ -41,4 +41,10 @@ class Beeper:
         self.stream.close()
         self.p.terminate()
 
+    def beep(self, morse):
+        m = {'.': self.dot,
+             '-': self.dash,
+             ' ': self.space}
 
+        for c in morse:
+            m.get(c, self.space)()

@@ -1,2 +1,5 @@
 pandas
 pyaudio
+pydub
+pytest
+pytest-mock
